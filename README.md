@@ -13,3 +13,5 @@ Participantes:
 ■ Ariel	Caceres
 
 ■ Lucas 	Macias
+
+■ Jadir Rojas
