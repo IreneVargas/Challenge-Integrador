@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Funkoshop</title>
-    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
     <!--Inicio Header-->
@@ -40,51 +39,61 @@
     <!--Inicio Main-->
     <main>
       <!--Inicio Section Nuevos Ingresos-->
-      <section>
-        <article>
-          <h3>Nuevos Ingresos</h3>
-          <p>Descubrí el próximo Funko Pop de tu colección</p>
-          <a href="./views/shop.html">SHOP</a>
+      <section class="index-hero-section">
+        <article class="index-hero-container">
+          <h3 class="index-hero-title">Nuevos Ingresos</h3>
+          <p class="index-hero-description">
+            Descubrí el próximo Funko Pop de tu colección
+          </p>
+          <a href="./views/shop.html">
+            <button class="index-hero-button">SHOP</button>
+          </a>
         </article>
       </section>
       <!--Fin Section Nuevos Ingresos-->
       <!--Inicio Section Star Wars-->
-      <section>
-        <article>
-          <h3>STAR WARS & THE MANDALORIAN</h3>
-          <p>
+      <section class="index-product-section">
+        <article class="index-item-detail">
+          <h3 class="index-item-title">STAR WARS & THE MANDALORIAN</h3>
+          <p class="index-item-description">
             Disfruta de una saga que sigue agregando personajes a su colección.
           </p>
-          <a href="./views/shop">VER COLECCIÓN</a>
+          <a href="./views/shop">
+            <button class="index-collection-button">VER COLECCIÓN</button>
+          </a>
         </article>
-        <picture>
+        <picture class="index-item-picture">
           <img src="./img/star-wars/baby-yoda-1.webp" alt="Funko Baby Yoda" />
         </picture>
       </section>
       <!--Fin Section Star Wars-->
       <!--Inicio Section Pokemon-->
-      <section>
-        <article>
-          <h3>POKEMON INDIGO</h3>
-          <p>
+      <section class="index-product-section">
+        <article class="index-item-detail">
+          <h3 class="index-item-title">POKEMON INDIGO</h3>
+          <p class="index-item-description">
             Atrapa todos los que puedas y disfruta de una colección llena de
             amigos.
           </p>
-          <a href="./views/shop">VER COLECCIÓN</a>
+          <a href="./views/shop">
+            <button class="index-collection-button">VER COLECCIÓN</button> 
+          </a>
         </article>
-        <picture>
+        <picture class="index-item-picture">
           <img src="./img/pokemon/vulpix-1.webp" alt="Funko Vulpix" />
         </picture>
       </section>
       <!--Fin Section Pokemon-->
       <!--Inicio Section Harry Potter-->
-      <section>
-        <article>
-          <h3>HARRY POTTER</h3>
-          <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-          <a href="./views/shop">VER COLECCIÓN</a>
+      <section class="index-product-section">
+        <article class="index-item-detail">
+          <h3 class="index-item-title">HARRY POTTER</h3>
+          <p class="index-item-description">Revive los recuerdos de una saga llena de magia y encanto.</p>
+          <a href="./views/shop">
+            <button class="index-collection-button">VER COLECCIÓN</button>
+          </a>
         </article>
-        <picture>
+        <picture class="index-item-picture">
           <img
             src="./img/harry-potter/snape-patronus-1.webp"
             alt="Funko Snape Patronus"
@@ -93,20 +102,20 @@
       </section>
       <!--Fin Section Harry Potter-->
       <!--Inicio Section Ultimos Lanzamientos-->
-      <section>
-        <h2>últimos lazamientos</h2>
-        <ul>
-          <li>
-            <article>
+      <section class="index-newproduct-section">
+        <h2 class="index-newproduct-title">últimos lazamientos</h2>
+        <ul class="index-slider">
+          <li class="index-slider-product">
+            <article class="index-product-container">
               <a href="./views/shop">
-                <picture>
+                <picture class="index-slider-picture">
                   <img
                     src="./img/star-wars/trooper-1.webp"
                     alt="Funko Stormtrooper"
                   />
-                  <div>NUEVO</div>
+                  <div class="index-new">NUEVO</div>
                 </picture>
-                <div>
+                <div class="index-newitem-detail">
                   <p>STAR WARS</p>
                   <h4>STORMTROOPER LIGHTSABER</h4>
                   <p>$ 1799,99</p>
@@ -154,6 +163,18 @@
             </article>
           </li>
         </ul>
+        <button class="left-slider">
+          <img
+            src="./img/icons/left-slider.svg"
+            alt="Left Button Slider Icon"
+          />
+        </button>
+        <button class="right-slider">
+          <img
+            src="./img/icons/right-slider.svg"
+            alt="Right Button Slider Icon"
+          />
+        </button>
       </section>
       <!--Fin Section Ultimos Lanzamientos-->
     </main>
