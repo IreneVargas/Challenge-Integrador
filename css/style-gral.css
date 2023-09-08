@@ -37,9 +37,10 @@ li {
     margin: 0 10px;
 }
 .texto {
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 }
 /*Fin barra navegador*/
 
