@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Funkoshop</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style-gral.css"/>
+    <link rel="stylesheet" href="css/style-item.css">
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!--Fuentes-->
   </head>
   <body>
     <!--Inicio Header-->
-    <header>
-      <nav>
+    <header class="header">
+      <!-- <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#0000</span>
+                <span id="menu-cerrar">X</span>
+            </label> -->
+      <nav class="navegador">  
         <picture>
           <a href="./index.html">
             <img
@@ -19,16 +38,16 @@
           </a>
         </picture>
         <ul>
-          <li>
+          <li class="nav texto">
             <a href="./views/shop.html">SHOP</a>
           </li>
-          <li>
+          <li class="nav texto">
             <a href="./views/contact.html">CONTACTO</a>
           </li>
-          <li>
+          <li class="nav texto">
             <a href="./views/login.html">LOGIN</a>
           </li>
-          <li>
+          <li class="nav texto">
             <a href="./views/cart.html">
               <img src="./img/icons/cart-icon.svg" alt="Cart Icon" />
             </a>
@@ -41,9 +60,9 @@
     <main>
       <!--Inicio Section Nuevos Ingresos-->
       <section>
-        <article>
-          <h3>Nuevos Ingresos</h3>
-          <p>Descubrí el próximo Funko Pop de tu colección</p>
+        <article class="article">
+          <h3 class="texto-article">Nuevos Ingresos</h3>
+          <p class="texto-article">Descubrí el próximo Funko Pop de tu colección</p>
           <a href="./views/shop.html">SHOP</a>
         </article>
       </section>
@@ -160,19 +179,15 @@
     <!--Fin Main-->
     <!--Inicio Footer-->
     <footer>
-      <section>
-        <nav>
-          <ul>
-            <li><a href="./views/shop.html">SHOP</a></li>
-            <li><a href="./views/login.html">INGRESAR</a></li>
-            <li><a href="./views/contact.html">CONTACTO</a></li>
-          </ul>
-          <picture>
+      <section class="pie">
+            <p class="texto"><a href="./views/shop.html">SHOP</a><br>
+            <a href="./views/login.html">INGRESAR</a><br>
+            <a href="./views/contact.html">CONTACTO</a></p>
+          <picture class="img-pie">
             <img src="./img/branding/isotype.svg" alt="Isotipo Funkoshop" />
           </picture>
-        </nav>
       </section>
-      <p>All rights reserved 2023 - Funkoshop &copy;</p>
+      <p class="pie-dos">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <!--Fin Footer-->
   </body>
