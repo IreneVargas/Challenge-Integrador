@@ -1,0 +1,21 @@
+.box {
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+
+.one {
+    flex: 1;
+}
+
+.two {
+    flex: 1;
+}
+
+.three {
+    flex: 1;
+}
+
+p {
+    text-align: left;
+}

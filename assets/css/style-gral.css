@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    background-color:#30343F
+    ;
+    height: 144px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Barra navegadpr*/
+.navegador {
+    display: flex;
+    height: 144px;
+    width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 0 10px;
+}
+.texto {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+/*Fin barra navegador*/
+
+.article {
+    background-image: url(../img/funkos-banner.webp);
+    height: 388px;
+}
+.texto-article {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+/*Footer*/
+footer {
+    background-color: #30343F;
+    text-align: center;
+    color: #ffffff;
+    height: 343;
+}
+.pie {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    cursor: pointer;
+	text-decoration: none;
+    height: 343px;
+    /*left: 97px;*/
+}
+.pie-dos {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.img-pie {
+    display: flex;
+    /*height: 144px;
+    width: 1200px;*/
+    margin-right: 110px;
+    margin-bottom: 102.81px;
+    justify-content: space-around;
+    align-items: center;
+}
+/*Fin footer*/
