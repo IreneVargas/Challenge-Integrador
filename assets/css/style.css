@@ -1,4 +1,135 @@
+:root{
+ --color-primario: #30343f;
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+a{
+  color: inherit; 
+  text-decoration: inherit;
+}
+
+
+/*-------------HEADER--------------- */
+
+/*Barra navegador*/
+.navegador {
+  background-color:var(--color-primario);
+  height: 7rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-li {
+  margin: 0 10px;
+}
+
+.nav-texto {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.cart-icon {
+  height: 22px;
+}
+
+
+.nav-banner {
+  height: 60px;
+}
+
+
+@media screen and (max-width: 600px) {
+  nav,.nav-ul{
+   display: block;
+   width: 100%;
+   margin: 1%;
+   text-align: center;
+  }
+
+  .navegador{
+    height: auto;
+  }
+}
+
+/*-------------FIN HEADER--------------- */
+
+
+
+/*-------------FOOTER--------------- */
+footer {
+  background-color: var(--color-primario);
+  color: #ffffff;
+  height: 15rem;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.pie {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 5rem;
+}
+
+.cont-pie{
+   display: block;
+}
+
+.cont-pie p{
+ margin: 10px 0px 10px 0px;
+}
+
+
+.pie-dos {
+  margin-top: 2%;
+  width: 100%;
+  text-align: center;
+}
+
+
+.img-pie {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*-------------FIN FOOTER--------------- */
+
+
+
+
+
 /* estilo para admin */
+
+/*
 .row_item {
   display: flex;
   flex-direction: row;
@@ -7,11 +138,21 @@
 }
 
 /* estilo para admin y admin2 */
+
 .column_container {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 13px 147px 236px 153px 32px 34px;
+ /* grid-template-columns: 13px 147px 236px 153px 32px 34px; // por favor setear dimensiones en % o rem */ 
   gap: 10px;
+}
+
+.article {
+  height: 388px;
+}
+.texto-article {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
 }

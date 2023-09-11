@@ -4,52 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Funkoshop</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/style-gral.css"/>
-    <link rel="stylesheet" href="css/style-item.css">
-    <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <!--Fuentes-->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style-item.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
   </head>
   <body>
     <!--Inicio Header-->
-    <header class="header">
+    <header class="navegador">
       <!-- <input type="checkbox" id="menu-check">
             <label id="menu" for="menu-check">
                 <span id="menu-abrir">&#0000</span>
                 <span id="menu-cerrar">X</span>
             </label> -->
-      <nav class="navegador">  
-        <picture>
-
-          <a href="./index.html">
-            <img
-              src="./img/branding/logo_light_horizontal.svg"
-              alt="Isologo Funkoshop"
-            />
-          </a>
-        </picture>
-        <ul class="header_nav_list">
-          <li class="header_nav_shop">
+      <nav>  
+        <a href="/index.html">
+          <picture>
+              <img class="nav-banner"
+                src="./assets/img/branding/logo_light_horizontal.svg"
+                alt="Isologo Funkoshop"
+              />
+      
+          </picture>
+        </a>
+        <ul class="nav-ul">
+          <li class="nav-li nav-texto">
             <a href="./views/shop.html">SHOP</a>
           </li>
-          <li class="header_nav_contact">
+          <li class="nav-li nav-texto">
             <a href="./views/contact.html">CONTACTO</a>
           </li>
-          <li class="header_nav_login">
+          <li class="nav-li  nav-texto">
             <a href="./views/login.html">LOGIN</a>
           </li>
-          <li class="header_nav_cart">
+          <li class="nav-li  nav-texto">
             <a href="./views/cart.html">
-              <img src="./img/icons/cart-icon.svg" alt="Cart Icon" />
+              <img class="cart-icon" src="./assets/img/icons/cart-icon.svg" alt="Cart Icon" />
             </a>
           </li>
         </ul>
@@ -82,8 +71,8 @@
             <button class="index_collection_button">VER COLECCIÓN</button>
           </a>
         </article>
-        <picture class="index_item_picture">
-          <img src="./img/star-wars/baby-yoda-1.webp" alt="Funko Baby Yoda" />
+        <picture>
+          <img src="./assets/img/star-wars/baby-yoda-1.webp" alt="Funko Baby Yoda" />
         </picture>
       </section>
       <!--Fin Section Star Wars-->
@@ -99,8 +88,8 @@
             <button class="index_collection_button">VER COLECCIÓN</button>
           </a>
         </article>
-        <picture class="index_item_picture">
-          <img src="./img/pokemon/vulpix-1.webp" alt="Funko Vulpix" />
+        <picture>
+          <img src="./assets/img/pokemon/vulpix-1.webp" alt="Funko Vulpix" />
         </picture>
       </section>
       <!--Fin Section Pokemon-->
@@ -117,7 +106,7 @@
         </article>
         <picture class="index_item_picture">
           <img
-            src="./img/harry-potter/snape-patronus-1.webp"
+            src="./assets/img/harry-potter/snape-patronus-1.webp"
             alt="Funko Snape Patronus"
           />
         </picture>
@@ -132,7 +121,7 @@
               <a href="./views/shop">
                 <picture class="index_slider_picture">
                   <img
-                    src="./img/star-wars/trooper-1.webp"
+                    src="./assets/img/star-wars/trooper-1.webp"
                     alt="Funko Stormtrooper"
                   />
                   <div class="index_new_sign">NUEVO</div>
@@ -151,7 +140,7 @@
               <a href="./views/shop">
                 <picture class="index_slider_picture">
                   <img
-                    src="./img/pokemon/pidgeotto-1.webp"
+                    src="./assets/img/pokemon/pidgeotto-1.webp"
                     alt="Funko Pidgeotto"
                   />
                   <div class="index_new_sign">NUEVO</div>
@@ -170,7 +159,7 @@
               <a href="./views/shop">
                 <picture class="index_slider_picture">
                   <img
-                    src="./img/harry-potter/luna-1.webp"
+                    src="./assets/img/harry-potter/luna-1.webp"
                     alt="Funko Luna Lovegood Lion Mask"
                   />
                   <div class="index_new_sign">NUEVO</div>
@@ -203,25 +192,20 @@
     <!--Fin Main-->
     <!--Inicio Footer-->
     <footer>
-      <section class="footer_container">
-        <nav class="footer_nav">
-          <ul class="footer_nav_list">
-            <li class="footer_nav_shop">
-              <a href="./views/shop.html">SHOP</a>
-            </li>
-            <li class="footer_nav_login">
-              <a href="./views/login.html">INGRESAR</a>
-            </li>
-            <li class="footer_nav_contact">
-              <a href="./views/contact.html">CONTACTO</a>
-            </li>
-          </ul>
-          <picture class="isotipo">
-            <img src="./img/branding/isotype.svg" alt="Isotipo Funkoshop" />
+      <div class="pie">
+           <div class="cont-pie">
+               <p><a href="./views/shop.html">SHOP</a></p>
+               <p><a href="./views/login.html">INGRESAR</a></p>
+               <p><a href="./views/contact.html">CONTACTO</a></p>
+            </div>
+          <picture class="img-pie">
+            <img src="./assets/img/branding/isotype.svg" alt="Isotipo Funkoshop" />
           </picture>
-      </section>
-      <p class="copyright">All rights reserved 2023 - Funkoshop &copy;</p>
+        </div>
+      <p class="pie-dos">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <!--Fin Footer-->
+
+    <script src="./assets/js/core.js"></script>
   </body>
 </html>
