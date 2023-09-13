@@ -1,0 +1,7 @@
+.column_container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+   /* grid-template-columns: 13px 147px 236px 153px 32px 34px; // por favor setear dimensiones en % o rem */ 
+    gap: 10px;

@@ -1,158 +1,176 @@
-:root{
- --color-primario: #30343f;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap");
 
+:root {
+    /* Typography */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /* Palette */
+    --primary-solid: #FF3333;
+    --primary-900: rgb(255, 51, 51, 0.9);
+    --primary-500: rgb(255, 51, 51, 0.5);
+    --primary-300: rgb(255, 51, 51, 0.3);
+
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+
+    --dark-solid: #1F1F1F;
+
+    --dark-900: rgb(31, 31, 31,0.9);
+    --dark-500: rgb(31, 31, 31,0.5);
+    --dark-300: rgb(31, 31, 31,0.3);
+
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    /* Font-sizes */
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
 }
 
-
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway', sans-serif;
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-
-a{
-  color: inherit; 
-  text-decoration: inherit;
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
 }
 
-
-/*-------------HEADER--------------- */
-
-/*Barra navegador*/
-.navegador {
-  background-color:var(--color-primario);
-  height: 7rem;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+a {
+    font-family: inherit;
+    text-decoration: none;
+    font-size: 2em;
+    color: inherit;
 }
 
-nav {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-ul{
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-
-.nav-li {
-  margin: 0 10px;
-}
-
-.nav-texto {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.2rem;
-}
-
-.cart-icon {
-  height: 22px;
-}
-
-
-.nav-banner {
-  height: 60px;
-}
-
-
-@media screen and (max-width: 600px) {
-  nav,.nav-ul{
-   display: block;
-   width: 100%;
-   margin: 1%;
-   text-align: center;
-  }
-
-  .navegador{
-    height: auto;
-  }
-}
-
-/*-------------FIN HEADER--------------- */
-
-
-
-/*-------------FOOTER--------------- */
+header,
 footer {
-  background-color: var(--color-primario);
-  color: #ffffff;
-  height: 15rem;
-  font-size: 1.1rem;
-  width: 100%;
+    font-family: var(--alternative-font); 
+    color: var(--light-font-solid);
 }
 
-.pie {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  padding-top: 5rem;
+ul,
+ol {
+    list-style-type: none;
 }
 
-.cont-pie{
-   display: block;
+p {
+    font-size: 1.8em;
 }
 
-.cont-pie p{
- margin: 10px 0px 10px 0px;
+img {
+    width: 100%;
 }
 
-
-.pie-dos {
-  margin-top: 2%;
-  width: 100%;
-  text-align: center;
+.container {
+    max-width: 120em;
+    margin: 0 auto;
 }
 
+/* Header */
 
-.img-pie {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+header {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
 }
 
-/*-------------FIN FOOTER--------------- */
-
-
-
-
-
-/* estilo para admin */
-
-/*
-.row_item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* estilo para admin y admin2 */
-
-.column_container {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
- /* grid-template-columns: 13px 147px 236px 153px 32px 34px; // por favor setear dimensiones en % o rem */ 
-  gap: 10px;
+.navbar_logo {
+    width: 30em;
 }
 
-.article {
-  height: 388px;
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
 }
-.texto-article {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: 'Raleway', sans-serif;
+
+.navbar_link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -ms-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+}
+
+.navbar_link:hover {
+    background-color: var(--primary-900);
+}
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.with-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    width: 30em;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+}
+
+.submenu_link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -ms-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+}
+
+.submenu_link:hover {
+    background-color: var(--primary-900);
+}
+
+/* Footer*/
+
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68) var(--spacing-68) var(--spacing-36) var(--spacing-68);
+    align-items: center;
+}
+
+.footer_copy {
+    margin-top: var(--spacing-36);
+    text-align: center;
 }
