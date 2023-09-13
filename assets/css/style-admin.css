@@ -1,7 +1,8 @@
-.column_container {
+.list-item_content {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
-   /* grid-template-columns: 13px 147px 236px 153px 32px 34px; // por favor setear dimensiones en % o rem */ 
+    grid-template-columns: 13px 147px 236px 153px 32px 34px; /*!tener en cuenta que no deben estar en pixeles, se pusieron para maquetar solamente, las medidas 'em'*/ 
     gap: 10px;
+}
