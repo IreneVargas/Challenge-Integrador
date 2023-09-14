@@ -4,224 +4,228 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Funkoshop</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/style-gral.css"/>
-    <link rel="stylesheet" href="css/style-item.css">
-    <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <!--Fuentes-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
   </head>
   <body>
     <!--Inicio Header-->
-    <header class="header">
+    <header>
       <!-- <input type="checkbox" id="menu-check">
             <label id="menu" for="menu-check">
                 <span id="menu-abrir">&#0000</span>
                 <span id="menu-cerrar">X</span>
             </label> -->
-      <nav class="navegador">  
-        <picture>
-
-          <a href="./index.html">
+      <nav class="navbar container">
+        <picture class="navbar_logo">
+          <a href="/index.html">
             <img
-              src="./img/branding/logo_light_horizontal.svg"
+              class="nav-banner"
+              src="./assets/img/branding/logo_light_horizontal.svg"
               alt="Isologo Funkoshop"
             />
           </a>
         </picture>
-        <ul class="header_nav_list">
-          <li class="header_nav_shop">
-            <a href="./views/shop.html">SHOP</a>
+        <ul class="navbar_menu">
+          <li class="navbar_item with-submenu">
+            <a class="navbar_link with-icon" href="./views/shop/shop.html"
+              >SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon
+            ></a>
+            <ul class="submenu">
+              <li class="submenu_item">
+                <a class="submenu_link" href="#">Figuras</a>
+              </li>
+              <li class="submenu_item">
+                <a class="submenu_link" href="#">Remeras</a>
+              </li>
+              <li class="submenu_item">
+                <a class="submenu_link" href="#">Llaveros</a>
+              </li>
+            </ul>
           </li>
-          <li class="header_nav_contact">
-            <a href="./views/contact.html">CONTACTO</a>
+          <li class="navbar_item">
+            <a class="navbar_link" href="./views/shop/contact.html">CONTACTO</a>
           </li>
-          <li class="header_nav_login">
-            <a href="./views/login.html">LOGIN</a>
+          <li class="navbar_item">
+            <a class="navbar_link" href="./views/admin/login.html">LOGIN</a>
           </li>
-          <li class="header_nav_cart">
-            <a href="./views/cart.html">
-              <img src="./img/icons/cart-icon.svg" alt="Cart Icon" />
+          <li class="navbar_item">
+            <a class="navbar_cart" href="./views/shop/cart.html">
+              <img
+                class="cart-icon"
+                src="./assets/img/icons/cart-icon.svg"
+                alt="Cart Icon"
+              />
             </a>
           </li>
         </ul>
       </nav>
     </header>
     <!--Fin Header-->
+    <!--Inicio Section Hero-->
+    <section class="hero">
+      <article class="hero_content container">
+        <h3 class="hero_title">Nuevos Ingresos</h3>
+        <p class ="hero_text">
+          Descubrí el próximo Funko Pop de tu colección
+        </p>
+        <a class="hero_link" href="./views/shop/shop.html">SHOP</a>
+      </article>
+    </section>
+    <!--Fin Section Hero-->
     <!--Inicio Main-->
     <main>
-      <!--Inicio Section Nuevos Ingresos-->
-      <section class="index_hero_section">
-        <article class="index_hero_container">
-          <h3 class="index_hero_title">Nuevos Ingresos</h3>
-          <p class="index_hero_description">
-            Descubrí el próximo Funko Pop de tu colección
-          </p>
-          <a href="./views/shop.html">
-            <button class="index_hero_button">SHOP</button>
-          </a>
-        </article>
-      </section>
-      <!--Fin Section Nuevos Ingresos-->
       <!--Inicio Section Star Wars-->
-      <section class="index_product_section">
-        <article class="index_item_detail">
-          <h3 class="index_item_title">STAR WARS & THE MANDALORIAN</h3>
-          <p class="index_item_description">
+      <section class="collection container">
+        <article class="collection_content">
+          <h3 class="collection_title">STAR WARS & THE MANDALORIAN</h3>
+          <p class="collection_text">
             Disfruta de una saga que sigue agregando personajes a su colección.
           </p>
-          <a href="./views/shop">
+          <a class="collection_link" href="./views/shop/shop.html">
             <button class="index_collection_button">VER COLECCIÓN</button>
           </a>
         </article>
-        <picture class="index_item_picture">
-          <img src="./img/star-wars/baby-yoda-1.webp" alt="Funko Baby Yoda" />
+        <picture class="collection_cover">
+          <img
+            src="./assets/img/star-wars/baby-yoda-1.webp"
+            alt="Funko Baby Yoda"
+          />
         </picture>
       </section>
       <!--Fin Section Star Wars-->
       <!--Inicio Section Pokemon-->
-      <section class="index_product_section">
-        <article class="index_item_detail">
-          <h3 class="index_item_title">POKEMON INDIGO</h3>
-          <p class="index_item_description">
+      <section class="collection container">
+        <article class="collection_content">
+          <h3 class="collection_title">POKEMON INDIGO</h3>
+          <p class="collection_text">
             Atrapa todos los que puedas y disfruta de una colección llena de
             amigos.
           </p>
-          <a href="./views/shop">
+          <a class="collection_link" href="./views/shop/shop.html">
             <button class="index_collection_button">VER COLECCIÓN</button>
           </a>
         </article>
-        <picture class="index_item_picture">
-          <img src="./img/pokemon/vulpix-1.webp" alt="Funko Vulpix" />
+        <picture class="collection_cover">
+          <img src="./assets/img/pokemon/vulpix-1.webp" alt="Funko Vulpix" />
         </picture>
       </section>
       <!--Fin Section Pokemon-->
       <!--Inicio Section Harry Potter-->
-      <section class="index_product_section">
-        <article class="index_item_detail">
-          <h3 class="index_item_title">HARRY POTTER</h3>
-          <p class="index_item_description">
+      <section class="collection container">
+        <article class="collection_content">
+          <h3 class="collection_title">HARRY POTTER</h3>
+          <p class="collection_text">
             Revive los recuerdos de una saga llena de magia y encanto.
           </p>
-          <a href="./views/shop">
+          <a class="collection_link" href="./views/shop/shop.html">
             <button class="index_collection_button">VER COLECCIÓN</button>
           </a>
         </article>
-        <picture class="index_item_picture">
+        <picture class="collection_cover">
           <img
-            src="./img/harry-potter/snape-patronus-1.webp"
+            src="./assets/img/harry-potter/snape-patronus-1.webp"
             alt="Funko Snape Patronus"
           />
         </picture>
       </section>
       <!--Fin Section Harry Potter-->
       <!--Inicio Section Ultimos Lanzamientos-->
-      <section class="index_product_section">
-        <h2 class="index_newproduct_title">últimos lazamientos</h2>
-        <ul class="index_slider">
-          <li class="index_newitem_slider">
-            <article class="index_newitem_container">
-              <a href="./views/shop">
-                <picture class="index_slider_picture">
+      <section class="slider container">
+        <h2 class="slider_title">últimos lazamientos</h2>
+        <ul class="slider_items">
+          <li class="slider_item">
+            <article class="card-item">
+              <a class="card-item_link" href="./views/shop/shop.html">
+                <picture class="card-item_cover">
                   <img
-                    src="./img/star-wars/trooper-1.webp"
+                    src="./assets/img/star-wars/trooper-1.webp"
                     alt="Funko Stormtrooper"
                   />
-                  <div class="index_new_sign">NUEVO</div>
+                  <span class="card-item_tag">NUEVO</>
                 </picture>
-                <div class="index_newitem_detail">
-                  <p class="index_newitem_collection">STAR WARS</p>
-                  <h4 class="index_newitem_title">STORMTROOPER LIGHTSABER</h4>
-                  <p class="index_newitem_price">$ 1799,99</p>
-                  <p class="index_newitem_offer">3 CUOTAS SIN INTERÉS</p>
+                <div class="card-item_content">
+                  <p class="card-item_licence">STAR WARS</p>
+                  <h4 class="card-item_name">STORMTROOPER LIGHTSABER</h4>
+                  <p class="card-item_price">$ 1799,99</p>
+                  <p class="card-item_promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
             </article>
           </li>
-          <li class="index_newitem_slider">
-            <article class="index_newitem_container">
-              <a href="./views/shop">
-                <picture class="index_slider_picture">
+          <li class="slider_item">
+            <article class="card_item">
+              <a class="card-item_link" href="./views/shop/shop.html">
+                <picture class="card-item_cover">
                   <img
-                    src="./img/pokemon/pidgeotto-1.webp"
+                    src="./assets/img/pokemon/pidgeotto-1.webp"
                     alt="Funko Pidgeotto"
                   />
-                  <div class="index_new_sign">NUEVO</div>
+                  <span class="card-item_tag">NUEVO</>
                 </picture>
-                <div class="index_newitem_detail">
-                  <p class="index_newitem_collection">POKEMON</p>
-                  <h4 class="index_newitem_title">PIDGEOTTO</h4>
-                  <p class="index_newitem_price">$ 1799,99</p>
-                  <p class="index_newitem_offer">3 CUOTAS SIN INTERÉS</p>
+                <div class="card-item_content">
+                  <p class="card-item_licence">POKEMON</p>
+                  <h4 class="card-item_name">PIDGEOTTO</h4>
+                  <p class="card-item_price">$ 1799,99</p>
+                  <p class="card-item_promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
             </article>
           </li>
           <li class="index_newitem_slider">
             <article class="index_newitem_container">
-              <a href="./views/shop">
-                <picture class="index_slider_picture">
+              <a href="./views/shop/shop.html">
+                <picture class="card-item_cover">
                   <img
-                    src="./img/harry-potter/luna-1.webp"
+                    src="./assets/img/harry-potter/luna-1.webp"
                     alt="Funko Luna Lovegood Lion Mask"
                   />
-                  <div class="index_new_sign">NUEVO</div>
+                  <span class="card-item_tag">NUEVO</>
                 </picture>
-                <div class="index_newitem_detail">
-                  <p class="index_newitem_collection">HARRY POTTER</p>
-                  <h4 class="index_newitem_title">LUNA LOVEGOOD LION MASK</h4>
-                  <p class="index_newitem_price">$ 1799,99</p>
-                  <p class="index_newitem_offer">3 CUOTAS SIN INTERÉS</p>
+                <div class="card-item_content">
+                  <p class="card-item_licence">HARRY POTTER</p>
+                  <h4 class="card-item_name">LUNA LOVEGOOD LION MASK</h4>
+                  <p class="card-item_price">$ 1799,99</p>
+                  <p class="card-item_promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
             </article>
           </li>
         </ul>
         <button class="index_left_slider">
-          <img
-            src="./img/icons/left-slider.svg"
-            alt="Left Button Slider Icon"
-          />
+          <iconify-icon icon="tabler:chevron-left"></iconify-icon>
         </button>
         <button class="index_right_slider">
-          <img
-            src="./img/icons/right-slider.svg"
-            alt="Right Button Slider Icon"
-          />
+          <iconify-icon icon="ic:round-chevron-right"></iconify-icon>
         </button>
       </section>
       <!--Fin Section Ultimos Lanzamientos-->
     </main>
     <!--Fin Main-->
     <!--Inicio Footer-->
-    <footer>
-      <section class="footer_container">
-        <nav class="footer_nav">
-          <ul class="footer_nav_list">
-            <li class="footer_nav_shop">
-              <a href="./views/shop.html">SHOP</a>
-            </li>
-            <li class="footer_nav_login">
-              <a href="./views/login.html">INGRESAR</a>
-            </li>
-            <li class="footer_nav_contact">
-              <a href="./views/contact.html">CONTACTO</a>
-            </li>
-          </ul>
-          <picture class="isotipo">
-            <img src="./img/branding/isotype.svg" alt="Isotipo Funkoshop" />
-          </picture>
-      </section>
-      <p class="copyright">All rights reserved 2023 - Funkoshop &copy;</p>
+    <footer class="footer">
+      <nav class="navbar container">
+        <ul class="">
+          <li class="">
+            <a class="navbar_link" href="./views//shop/shop.html">SHOP</a>
+          </li>
+          <li class="">
+            <a class="navbar_link" href="./views/admin/login.html">INGRESAR</a>
+          </li>
+          <li class="">
+            <a class="navbar_link" href="./views/shop/contact.html">CONTACTO</a>
+          </li>
+        </ul>
+        <picture class="navbar_iso">
+          <img
+            src="./assets/img/branding/isotype.svg"
+            alt="Isotipo Funkoshop"
+          />
+        </picture>
+      </nav>
+      <p class="footer_copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <!--Fin Footer-->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="./assets/js/core.js"></script>
   </body>
 </html>
