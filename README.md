@@ -10,6 +10,8 @@ Participantes:
 
 ■ Belen	Dominguez
 
-■ Ariel	Caceres
+■ Luisa Fernanda
 
 ■ Lucas 	Macias
+
+■ Jadir Rojas
