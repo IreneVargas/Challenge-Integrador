@@ -126,7 +126,7 @@ main {
 .cart-summary .summary-paragraph {
   font-size: 1.6rem;
   font-weight: var(--weight-700);
-  color: var(--light-grey);
+  color: var(--light-grey-variant2);
 }
 
 .cart-summary-wrapper .cart-title {

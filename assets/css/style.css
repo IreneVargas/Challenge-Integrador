@@ -27,7 +27,8 @@
   --dark-grey: #333333;
   --dark-grey-variant2: #30343f;
 
-  --light-grey: #747474;
+  --light-grey: #b9b9b9;
+  --light-grey-variant2: #747474;
 
   --dark-bg-solid: #30343f;
   --light-bg-solid: #fafaff;
@@ -193,6 +194,7 @@ header {
 .btn-primary {
   display: block;
   color: #fff;
+  border: none;
   background-color: var(--primary-solid);
   text-transform: uppercase;
   text-align: center;
