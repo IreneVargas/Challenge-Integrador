@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito | Funkoshop</title>
     <link href="../../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style-cart.css" />
   </head>
   <body>
     <!--Inicio Header-->
@@ -57,15 +58,16 @@
     <!--Fin Header-->
 
     <main>
-      <h1>Carrito de compras</h1>
+      <h1 class="cart-title">Carrito de compras</h1>
       <div class="cart-table">
-        <div class="cart-header">
-          <p>Detalle del Producto</p>
-          <p>Cantidad</p>
-          <p>Total</p>
+        <div class="cart-header card-background">
+          <p class="cart-header-title">Detalle del Producto</p>
+          <p class="cart-header-title">Cantidad</p>
+          <p class="cart-header-title">Total</p>
+          <span class="cart-empty-header"></span>
         </div>
         <ul class="cart-product-items">
-          <li class="product-item">
+          <li class="product-item card-background">
             <div class="item-detail">
               <img
                 src="../../assets/img//star-wars/baby-yoda-1.webp"
@@ -104,7 +106,7 @@
               />
             </button>
           </li>
-          <li class="product-item">
+          <li class="product-item card-background">
             <div class="item-detail">
               <img
                 src="../../assets/img/pokemon/pidgeotto-1.webp"
@@ -147,30 +149,30 @@
       </div>
 
       <div class="cart-summary-wrapper">
-        <h2>Resumen</h2>
+        <h2 class="cart-title">Resumen</h2>
 
-        <div class="cart-summary">
+        <div class="cart-summary card-background">
           <div class="cart-summary-detail">
-            <div class="cart-quantity">
-              <p>Cantidad de elementos</p>
-              <p>3</p>
+            <div class="cart-quantity summary-item">
+              <p class="summary-subtitle">Cantidad de elementos</p>
+              <p class="summary-paragraph">3</p>
             </div>
-            <div class="cart-subtotal">
-              <p>Subtotal</p>
-              <p>$5399,97</p>
+            <div class="cart-subtotal summary-item">
+              <p class="summary-subtitle">Subtotal</p>
+              <p class="summary-paragraph">$5399,97</p>
             </div>
-            <div class="cart-shipping">
-              <p>Envio</p>
-              <p>$0,00</p>
+            <div class="cart-shipping summary-item">
+              <p class="summary-subtitle">Envio</p>
+              <p class="summary-paragraph">$0,00</p>
             </div>
           </div>
-          <div class="cart-total">
-            <p>Total</p>
-            <p>$5399,97</p>
+          <div class="cart-total summary-item">
+            <p class="summary-subtitle">Total</p>
+            <p class="summary-paragraph">$5399,97</p>
           </div>
         </div>
 
-        <a href="#">Ir a pagar</a>
+        <a class="btn-primary" href="#">Ir a pagar</a>
       </div>
     </main>
 
