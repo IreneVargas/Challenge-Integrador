@@ -1,3 +1,15 @@
+.list_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .list-add_link {
     background-color: var(--primary-solid);
 }
