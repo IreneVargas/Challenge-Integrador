@@ -1,5 +1,9 @@
 .list-add_link {
-    background-color: ;
+    background-color: var(--primary-solid);
+}
+
+img {
+    background-color: inherit;
 }
 
 .list_item {
