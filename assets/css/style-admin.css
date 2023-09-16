@@ -1,8 +1,18 @@
+.list-add_link {
+    background-color: ;
+}
+
+.list_item {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
 .list-item_content {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 13px 147px 236px 153px 32px 34px; /*!tener en cuenta que no deben estar en pixeles, se pusieron para maquetar solamente, las medidas 'em'*/ 
-    gap: 10px;
+    grid-template-columns: 1fr 2fr 4fr 3fr 1fr 1fr; 
+    gap: ;
 }
