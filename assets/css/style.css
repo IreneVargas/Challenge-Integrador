@@ -193,7 +193,7 @@ header {
 
 .btn-primary {
   display: block;
-  color: #fff;
+  color: var(--light-font-solid);
   border: none;
   background-color: var(--primary-solid);
   text-transform: uppercase;
