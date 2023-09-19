@@ -130,48 +130,43 @@
     background-color: var(--primary-900);
 }
 
+/* Media query para pantallas menores a 425px */
 @media (max-width: 425px) {
     .hero {
-      padding: var(--spacing-68); /* Ajusta el espaciado del encabezado en pantallas pequeñas */
+      padding: var(--spacing-68); 
     }
   
     .hero_content {
-      gap: var(--spacing-16); /* Ajusta el espaciado entre elementos en pantallas pequeñas */
+      gap: var(--spacing-16); 
     }
   
     .hero_title {
-      font-size: var(--font-xlarge); /* Reduce el tamaño de fuente del título en pantallas pequeñas */
+      font-size: var(--font-xlarge); 
     }
   
     .hero_text {
-      font-size: var(--font-small); /* Reduce el tamaño de fuente del texto en pantallas pequeñas */
+      font-size: var(--font-small); 
     }
   
     .hero_link {
-      padding: var(--spacing-12) var(--spacing-36); /* Ajusta el espaciado del enlace en pantallas pequeñas */
-      font-size: var(--font-small); /* Reduce el tamaño de fuente del enlace en pantallas pequeñas */
+      padding: var(--spacing-12) var(--spacing-36); 
+      font-size: var(--font-small); 
     }
-  
-    /* Realiza otros cambios necesarios en la sección Hero para pantallas pequeñas */
-  
-    /* Cambios específicos para las colecciones */
+
     .collection {
-      grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+      grid-template-columns: 1fr; /
     }
   
     .collection:nth-child(2) .collection_cover {
-      order: 0; /* Restablece el orden de las imágenes en pantallas pequeñas */
+      order: 0; 
     }
   
     .collection_text {
-      font-size: var(--font-medium); /* Reduce el tamaño de fuente del texto de la colección en pantallas pequeñas */
+      font-size: var(--font-medium); 
     }
   
     .collection_link {
-      font-size: var(--font-xsmall); /* Reduce el tamaño de fuente del enlace de la colección en pantallas pequeñas */
-      padding: var(--spacing-8) var(--spacing-16); /* Ajusta el espaciado del enlace de la colección en pantallas pequeñas */
+      font-size: var(--font-xsmall); 
+      padding: var(--spacing-8) var(--spacing-16); 
     }
-  
-    /* Realiza otros cambios necesarios en las colecciones para pantallas pequeñas */
-  }
- 
+}
