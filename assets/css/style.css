@@ -67,9 +67,6 @@ html {
   font-family: var(--base-font);
   font-size: 62.5%;
   color: var(--dark-solid);
-  font-family: var(--base-font);
-  font-size: 62.5%;
-  color: var(--dark-solid);
 }
 
 a {
@@ -195,6 +192,15 @@ header {
 .footer_copy {
   margin-top: var(--spacing-36);
   text-align: center;
+}
+
+footer .navbar_link:hover {
+  padding: var(--spacing-12) var(--spacing-16);
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
 }
 
 /* Slider */
@@ -362,6 +368,10 @@ header {
 
   .footer {
     padding: var(--spacing-36) var(--spacing-36) var(--spacing-16) var(--spacing-36);
+  }
+
+  footer .navbar_link:hover {
+    padding: var(--spacing-8) var(--spacing-8);
   }
 
   .navbar_iso {
