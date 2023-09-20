@@ -131,7 +131,7 @@
 }
 
 /* Media query para pantallas menores a 425px */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     .hero {
       padding: var(--spacing-68); 
     }

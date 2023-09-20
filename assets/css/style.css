@@ -178,7 +178,7 @@ header {
 
 .submenu_link:hover {
   background-color: var(--primary-900);
-  padding: var(--spacing-16) var(--spacing-16);
+  padding: var(--spacing-12) var(--spacing-16);
   font-size: 2rem;
   position: relative;
 }
@@ -302,7 +302,8 @@ header {
 }
 
 /* Media query para pantallas menores a 425px */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+
   header {
     padding: var(--spacing-24);
   }
@@ -323,7 +324,7 @@ header {
 
   .navbar_link {
     font-size: var(--font-small);
-    padding: var(--spacing-8) var(--spacing-12);
+    padding: var(--spacing-8) var(--spacing-8);
   }
 
   .navbar_link:hover {
@@ -350,13 +351,13 @@ header {
 
   .submenu_link {
     display: block;
-    padding: var(--spacing-8) var(--spacing-12);
-    font-size: var(--font-small);
+    padding: var(--spacing-8) var(--spacing-8);
+    font-size: var(--font-xsmall);
   }
 
   .submenu_link:hover {
-    padding: var(--spacing-8) var(--spacing-12);
-    font-size: var(--font-small);
+    padding: var(--spacing-8) var(--spacing-8);
+    font-size: var(--font-xsmall);
   }
 
   .footer {
@@ -364,7 +365,7 @@ header {
   }
 
   .navbar_iso {
-    max-width: 10rem;
+    max-width: 11rem;
   }
 
   /* Cambios para el slider */
