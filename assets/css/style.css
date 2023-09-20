@@ -7,6 +7,7 @@
 
   /* Palette */
   --primary-solid: #ff3333;
+  --primary-solid-variant2: #f24e1e;
   --primary-900: rgb(255, 51, 51, 0.9);
   --primary-500: rgb(255, 51, 51, 0.5);
   --primary-300: rgb(255, 51, 51, 0.3);
@@ -17,10 +18,17 @@
   --secondary-300: rgb(29, 132, 181, 0.3);
 
   --dark-solid: #1f1f1f;
+  --dark-solid-variant2: #111111;
 
   --dark-900: rgb(31, 31, 31, 0.9);
   --dark-500: rgb(31, 31, 31, 0.5);
   --dark-300: rgb(31, 31, 31, 0.3);
+
+  --dark-grey: #333333;
+  --dark-grey-variant2: #30343f;
+
+  --light-grey: #b9b9b9;
+  --light-grey-variant2: #747474;
 
   --dark-bg-solid: #30343f;
   --light-bg-solid: #fafaff;
@@ -56,6 +64,9 @@
 }
 
 html {
+  font-family: var(--base-font);
+  font-size: 62.5%;
+  color: var(--dark-solid);
   font-family: var(--base-font);
   font-size: 62.5%;
   color: var(--dark-solid);

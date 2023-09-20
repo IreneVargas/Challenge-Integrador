@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro | Funkoshop</title>
     <link href="../../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets//css//style-register.css" />
   </head>
   <body>
     <!--Inicio Header-->
@@ -56,42 +57,48 @@
     </header>
     <!--Fin Header-->
     <main>
-      <h1>Crea tu cuenta</h1>
-      <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+      <section>
+        <div class="title-wrapper">
+          <h1 class="register-title">Crea tu cuenta</h1>
+          <p class="register-description">
+            Completa el formulario para ser parte del mundo de los Funkos
+          </p>
+        </div>
 
-      <form>
-        <div class="input-wrapper">
-          <label for="name"
-            >Nombre: <input id="name" type="text" placeholder="Jhon"
-          /></label>
-          <label for="lastname"
-            >Apellido: <input id="lastname" type="text" placeholder="Doe"
-          /></label>
-          <label for="email"
-            >Email:
-            <input id="email" type="email" placeholder="jhondoe@correo.com"
-          /></label>
-          <label for="password"
-            >Contraseña<input
-              id="password"
-              type="password"
-              placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
-          /></label>
-          <label for="repeat-password"
-            >Repita Contraseña<input
-              id="repeat-password"
-              type="password"
-              placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
-          /></label>
-        </div>
-        <div class="submit-wrapper">
-          <button type="submit">Registrar</button>
-          <label for="terms"
-            ><input type="checkbox" name="" id="terms" /> Acepto
-            <a href="#">Términos y Condiciones</a>
-          </label>
-        </div>
-      </form>
+        <form>
+          <div class="input-wrapper">
+            <label for="name"
+              >Nombre: <input id="name" type="text" placeholder="Jhon"
+            /></label>
+            <label for="lastname"
+              >Apellido: <input id="lastname" type="text" placeholder="Doe"
+            /></label>
+            <label for="email"
+              >Email:
+              <input id="email" type="email" placeholder="jhondoe@correo.com"
+            /></label>
+            <label for="password"
+              >Contraseña<input
+                id="password"
+                type="password"
+                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
+            /></label>
+            <label for="repeat-password"
+              >Repita Contraseña<input
+                id="repeat-password"
+                type="password"
+                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
+            /></label>
+          </div>
+          <div class="submit-wrapper">
+            <button class="btn-primary" type="submit">Registrar</button>
+            <label for="terms"
+              ><input type="checkbox" name="" id="terms" /> Acepto
+              <a class="terms-link" href="#">Términos y Condiciones</a>
+            </label>
+          </div>
+        </form>
+      </section>
     </main>
     <!--Inicio Footer-->
     <footer class="footer">
