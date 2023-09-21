@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Funkoshop</title>
-    <link href="../../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/contact.css">  
   </head>
   <body>
     <!--Inicio Header-->
@@ -57,40 +58,44 @@
     <!--Fin Header-->
     <!--Comienzo Main-->
     <main>
-      <h1>CONTACTANOS</h1>
-      <p>Completá el formulario para que podamos ayudarte</p>
-      <form>
-        <div class="">
-          <label class="" for="name"
-            >Nombre: <input class="" id="name" type="text" placeholder="Jhon"
-          /></label>
-          <label class="" for="lastname"
-            >Apellido:
-            <input class="" id="lastname" type="text" placeholder="Doe"
-          /></label>
-          <label for="email"
-            >Email:
-            <input
+      <section class="contact container">
+        <article class="contact-head_content">
+          <h1 class="contact-title">CONTACTANOS</h1>
+          <p class="contact-text">Completá el formulario para que podamos ayudarte</p>
+        </article>  
+        <form>
+          <div class="">
+            <label class="" for="name"
+              >Nombre: <input class="" id="name" type="text" placeholder="Jhon"
+            /></label>
+            <label class="" for="lastname"
+              >Apellido:
+              <input class="" id="lastname" type="text" placeholder="Doe"
+            /></label>
+            <label for="email"
+              >Email:
+              <input
+                class=""
+                id="email"
+                type="email"
+                placeholder="jhondoe@correo.com"
+            /></label>
+          </div>
+          <label class="" for="message"
+            >Mensaje:
+            <textarea
               class=""
-              id="email"
-              type="email"
-              placeholder="jhondoe@correo.com"
-          /></label>
-        </div>
-        <label class="" for="message"
-          >Mensaje:
-          <textarea
-            class=""
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-          ></textarea>
-        </label>
-        <div class="">
-          <button class="" id="submit" type="submit" onclick="">Enviar</button>
-        </div>
-      </form>
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+          <div class="">
+            <button class="" id="submit" type="submit" onclick="">Enviar</button>
+          </div>
+        </form>
+      </section>
     </main>
     <!--Fin Main-->
     <!--Inicio Footer-->

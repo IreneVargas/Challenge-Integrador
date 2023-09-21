@@ -39,6 +39,10 @@
     font-weight: 500;
 }
 
+.list {
+    color: var(--dark-solid);
+}
+
 .list_header {
     padding: 0 var(--spacing-128) var(--spacing-36) 0;
     display: grid;
