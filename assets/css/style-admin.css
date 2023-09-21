@@ -9,6 +9,7 @@
     grid-template-columns: 1fr 11fr;
     justify-items: stretch;
     align-items: center;
+    gap: var(--spacing-20);
 }
 
 .search_link {
@@ -58,6 +59,7 @@
     grid-template-columns: 6fr 1fr;
     align-items: center;
     justify-items: end;
+    gap: 2rem;
 }
 
 .list-add_text {
@@ -84,16 +86,25 @@ img {
 }
 
 .list_item {
-    display: grid;
-    align-content: center;
-    justify-content: center;
+    padding: 0 var(--spacing-128) 0 var(--spacing-28);
+    font-size: var(--font-large);
+}
+
+.list-item_content:first-child {
+    font-weight: 700;
 }
 
 .list-item_content {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 2fr 4fr 3fr 1fr 1fr; 
-    gap: ;
+    padding-bottom: var(--spacing-36);
+    grid-template-columns: 3rem 15rem 35rem 20.5rem 3.5rem 3.5rem;
+    gap: 4.8rem;
+    align-content: center;
+    justify-items: start;
+}
+
+.delete_link {
+    background: none;
+    border: 0;
+    padding: 0;
 }
