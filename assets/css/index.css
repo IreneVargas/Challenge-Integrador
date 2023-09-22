@@ -50,6 +50,7 @@
 .hero_link {
     display: inline-block;
     font-size: var(--font-medium);
+    font-weight: 500;
     background-color: var(--light-bg-solid);
     padding: var(--spacing-12) var(--spacing-68);
     border-radius: 5rem;
@@ -57,7 +58,6 @@
     -moz-border-radius: 5rem;
     -ms-border-radius: 5rem;
     -o-border-radius: 5rem;
-    font-weight: 500;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;

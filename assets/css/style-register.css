@@ -35,7 +35,7 @@ form {
 }
 
 .input-wrapper label {
-  color: #000;
+  color: var(--dark-admin-font);
   font-size: 24px;
   display: flex;
   justify-content: space-between;

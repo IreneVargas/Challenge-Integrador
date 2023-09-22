@@ -60,40 +60,50 @@
     <main>
       <section class="contact container">
         <article class="contact-head_content">
-          <h1 class="contact-title">CONTACTANOS</h1>
-          <p class="contact-text">Completá el formulario para que podamos ayudarte</p>
+          <h1 class="contact-head_title">CONTACTANOS</h1>
+          <p class="contact-head_text">Completá el formulario para que podamos ayudarte</p>
         </article>  
         <form>
-          <div class="">
-            <label class="" for="name"
-              >Nombre: <input class="" id="name" type="text" placeholder="Jhon"
+          <fieldset class="contact-data">
+            <label class="contact-data_content" for="name"
+              >Nombre: <input 
+              class="contact-data_input" 
+              id="name" 
+              type="text" 
+              placeholder="Jhon"
             /></label>
-            <label class="" for="lastname"
+            <label class="contact-data_content" for="lastname"
               >Apellido:
-              <input class="" id="lastname" type="text" placeholder="Doe"
+              <input 
+              class="contact-data_input" 
+              id="lastname" 
+              type="text" 
+              placeholder="Doe"
             /></label>
-            <label for="email"
+            <label class="contact-data_content"  for="email"
               >Email:
               <input
-                class=""
+                class="contact-data_input"
                 id="email"
                 type="email"
                 placeholder="jhondoe@correo.com"
             /></label>
-          </div>
-          <label class="" for="message"
-            >Mensaje:
-            <textarea
-              class=""
-              name="message"
-              id=""
-              cols="30"
-              rows="10"
-            ></textarea>
-          </label>
-          <div class="">
+          </fieldset>
+          <fieldset class="contact-data">
+            <label class="contact-data_content" for="message"
+              >Mensaje:
+              <textarea
+                class="contact-data_textarea"
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+          </fieldset>
+          <fieldset class="contact-data">
             <button class="" id="submit" type="submit" onclick="">Enviar</button>
-          </div>
+          </fieldset>
         </form>
       </section>
     </main>

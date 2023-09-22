@@ -34,6 +34,8 @@
   --light-bg-solid: #fafaff;
   --light-font-solid: #ffffff;
 
+  --dark-admin-font: #000;
+
   /* Font-sizes */
   --font-display: 4.6rem;
   --font-jumbo: 3.8rem;
@@ -136,6 +138,9 @@ header {
 
 .navbar_link:hover {
   background-color: var(--primary-900);
+}
+
+header .navbar_link:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -195,12 +200,7 @@ header {
 }
 
 footer .navbar_link:hover {
-  padding: var(--spacing-12) var(--spacing-16);
-  transform: none;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
+  padding: var(--spacing-8) var(--spacing-16);
 }
 
 /* Slider */
@@ -333,7 +333,7 @@ footer .navbar_link:hover {
     padding: var(--spacing-8) var(--spacing-8);
   }
 
-  .navbar_link:hover {
+  header .navbar_link:hover {
     transform: none;
     -webkit-transform: none;
     -moz-transform: none;
