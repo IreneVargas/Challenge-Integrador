@@ -71,6 +71,7 @@
               id="name" 
               type="text" 
               placeholder="Jhon"
+              required
             /></label>
             <label class="contact-data_content" for="lastname"
               >Apellido:
@@ -79,6 +80,7 @@
               id="lastname" 
               type="text" 
               placeholder="Doe"
+              required
             /></label>
             <label class="contact-data_content"  for="email"
               >Email:
@@ -87,22 +89,29 @@
                 id="email"
                 type="email"
                 placeholder="jhondoe@correo.com"
+                required
             /></label>
           </fieldset>
           <fieldset class="contact-data">
             <label class="contact-data_content" for="message"
-              >Mensaje:
+              >
               <textarea
                 class="contact-data_textarea"
                 name="message"
                 id=""
-                cols="30"
+                cols="40"
                 rows="10"
+                placeholder="Dejanos un mensaje"
+                required
               ></textarea>
             </label>
           </fieldset>
-          <fieldset class="contact-data">
-            <button class="" id="submit" type="submit" onclick="">Enviar</button>
+          <fieldset class="contact_button">
+            <button 
+            class="btn-primary" 
+            id="submit" 
+            type="submit" 
+            onclick="">Enviar</button>
           </fieldset>
         </form>
       </section>

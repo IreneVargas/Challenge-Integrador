@@ -1,4 +1,5 @@
 /* Hero */
+
 .hero {
     background-image: url(../img/funkos-banner.webp);
     padding: var(--spacing-128);
@@ -70,7 +71,6 @@
     color: var(--light-font-solid);
 }
 
-/* Main */
 /* Collections */
 
 .collection {
@@ -130,10 +130,45 @@
     background-color: var(--primary-900);
 }
 
-/* Media query para pantallas menores a 425px */
+/* Media query para pantallas menores a 768px */
+
 @media (max-width: 768px) {
+
+  /* Cambios Hero 768px */
+  .hero {
+    padding: var(--spacing-16);
+  }
+  
+  .hero_title {
+  font-size: var(--font-xlarge);
+  }
+
+/* Cambios Collection 768px */
+  .collection {
+    padding: var(--spacing-16);
+  }
+
+  .collection_title {
+    font-size: var(--font-xlarge);
+    min-width: 22rem;
+  }
+  
+  .collection_text {
+  font-size: var(--font-medium);
+  }
+
+  .collection_cover {
+    min-width: 19rem;
+  }
+}
+
+/* Media query para pantallas menores a 425px */
+
+@media (max-width: 425px) {
+
+  /* Cambios Hero 425px */
     .hero {
-      padding: var(--spacing-68); 
+      padding: var(--spacing-8); 
     }
   
     .hero_content {
@@ -153,14 +188,19 @@
       font-size: var(--font-small); 
     }
 
+    /* Cambios Collection 768px */
     .collection {
-      grid-template-columns: 1fr; /
+      grid-template-columns: 1fr; 
+      padding: var(--spacing-8);
     }
   
     .collection:nth-child(2) .collection_cover {
       order: 0; 
     }
   
+    .collection_title {
+      font-size: var(--font-xlarge);
+    }
     .collection_text {
       font-size: var(--font-medium); 
     }
@@ -169,4 +209,5 @@
       font-size: var(--font-xsmall); 
       padding: var(--spacing-8) var(--spacing-16); 
     }
+    
 }

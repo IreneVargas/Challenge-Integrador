@@ -41,11 +41,39 @@
 .contact-data_input, .contact-data_textarea {
     padding: var(--spacing-8);
     font-size: var(--font-small);
+    outline: none;
+}
+
+.contact-data_input {
+    border: none;
+    border-bottom: .2rem solid var(--primary-solid);
 }
 
 .contact-data_input::placeholder {
     color: var(--light-grey);
 }
 
+.contact-data_textarea {
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+}
+.contact-data_textarea::placeholder {
+    color: var(--light-grey);
+}
 
+.contact_button {
+    border: none;
+    display: flex;
+}
 
+.btn-primary {
+    text-transform: unset;
+    padding: var(--spacing-12) var(--spacing-24);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-bg-solid);
+}
