@@ -35,6 +35,7 @@
     color: var(--dark-admin-font);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: var(--spacing-36);
 }
 
@@ -70,7 +71,6 @@
 }
 
 .btn-primary {
-    text-transform: unset;
     padding: var(--spacing-12) var(--spacing-24);
 }
 
