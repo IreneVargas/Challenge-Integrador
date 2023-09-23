@@ -1,106 +1,145 @@
 .search {
-    padding: var(--spacing-36) 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  padding: var(--spacing-36) 0;
 }
 
 .search_content {
-    display: grid;
-    grid-template-columns: 1fr 11fr;
-    justify-items: stretch;
-    align-items: center;
-    gap: var(--spacing-20);
-    max-width: 60rem;
+  display: grid;
+  grid-template-columns: .5fr 11.5fr;
+  justify-items: stretch;
+  align-items: center;
+  gap: var(--spacing-20);
 }
 
 .search_link {
-    display: grid;
-    justify-content: center;
+  display: grid;
+  justify-content: center;
 }
 
 .search_input {
-    padding: var(--spacing-8) var(--spacing-24);
-    font-size: var(--font-medium);
-    border: .2rem solid var(--dark-grey-variant2);
-    border-radius: .6rem;
-    -webkit-border-radius: .6rem;
-    -moz-border-radius: .6rem;
-    -ms-border-radius: .6rem;
-    -o-border-radius: .6rem;
-    width: 53rem;
+  padding: var(--spacing-8) var(--spacing-24);
+  font-size: var(--font-medium);
+  border: 0.2rem solid var(--dark-grey-variant2);
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  max-width: 53rem;
 }
 
-.search_input::placeholder { 
-    color: var(--light-grey); 
-    font-weight: 500;
+.search_input::placeholder {
+  color: var(--light-grey);
+  font-weight: 500;
 }
 
+.list {
+    padding-right: var(--spacing-128);
+}
 .list_header {
-    padding: 0 var(--spacing-128) var(--spacing-36) 0;
-    display: grid;
-    grid-template-columns: 8fr 4fr;
-    align-items: center;
-    justify-items: stretch;
+  padding-bottom: var(--spacing-36);
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  align-items: center;
+  justify-items: stretch;
 }
 
 .list_title {
-    font-family: var(--alternative-font);
-    font-weight: 700;
-    font-size: var(--font-display);
+  font-family: var(--alternative-font);
+  font-weight: 700;
+  font-size: var(--font-display);
 }
 
 .list-add {
-    display: grid;
-    grid-template-columns: 6fr 1fr;
-    align-items: center;
-    justify-items: end;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  align-items: center;
+  justify-items: end;
+  gap: 2rem;
 }
 
 .list-add_text {
-    font-size: var(--font-xlarge);
-    font-weight: 700;
+  font-size: var(--font-xlarge);
+  font-weight: 700;
 }
 
 .list-add_link {
-    background-color: var(--primary-solid);
-    display: inline-block;
-    padding: var(--spacing-8);
-    width: 3.6rem;
-    border-radius: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
+  background-color: var(--primary-solid);
+  display: inline-block;
+  padding: var(--spacing-8);
+  width: 3.6rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
 img {
-    display: flex;
-    align-content: center;
-    background-color: inherit;
+  display: flex;
+  align-content: center;
+  background-color: inherit;
 }
 
 .list_item {
-    padding: 0 var(--spacing-128) 0 var(--spacing-28);
-    font-size: var(--font-large);
+  padding-left: var(--spacing-28);
+  font-size: var(--font-large);
 }
 
 .list-item_content:first-child {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .list-item_content {
-    display: grid;
-    padding-bottom: var(--spacing-36);
-    grid-template-columns: 3rem 15rem 35rem 20.5rem 3.5rem 3.5rem;
-    gap: 4.8rem;
-    align-content: center;
-    justify-items: start;
+  display: grid;
+  padding-bottom: var(--spacing-36);
+  grid-template-columns: 0.3fr 1.5fr 3.5fr 2.05fr 0.35fr 0.35fr;
+  gap: 4.8rem;
+  align-content: center;
+  justify-items: start;
 }
 
 .delete_link {
-    background: none;
-    border: 0;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+/* Media query para pantallas menores a 768px */
+
+@media (max-width: 768px) {
+
+  /* Cambio List Section 768px  */
+  .search {
+    padding: var(--spacing-16);
+  }
+
+  .list {
+    padding: var(--spacing-16);
+  }
+
+  .list_header {
+    padding: 0 0 var(--spacing-16) 0;
+  }
+  
+  .list_title {
+    font-size: var(--font-xlarge);
+  }
+
+  .list-add_text {
+    font-size: var(--font-medium);
+  }
+
+  .list-add_link {
+    width: 2.5rem;
+  }
+
+  .list_item {
+    font-size: var(--font-small);
     padding: 0;
+  }
+
+  .list-item_content {
+    padding-bottom: var(--spacing-16);
+    gap: 2rem;
+  }
 }

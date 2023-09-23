@@ -315,6 +315,7 @@ footer .navbar_link:hover {
 /* Media query para pantallas menores a 768px */
 
 @media (max-width: 768px) {
+  
   /* Cambios Header 768px */
   header {
     padding: var(--spacing-16);
