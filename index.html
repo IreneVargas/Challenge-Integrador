@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Funkoshop</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
   </head>
   <body>
     <!--Inicio Header-->
     <header>
-      <!-- <input type="checkbox" id="menu-check">
-            <label id="menu" for="menu-check">
-                <span id="menu-abrir">&#0000</span>
-                <span id="menu-cerrar">X</span>
-            </label> -->
       <nav class="navbar container">
         <picture class="navbar_logo">
           <a href="/index.html">
@@ -64,10 +60,10 @@
     <!--Inicio Section Hero-->
     <section class="hero">
       <article class="hero_content container">
-        <h3 class="hero_title">Nuevos Ingresos</h3>
-        <p class ="hero_text">
-          Descubrí el próximo Funko Pop de tu colección
-        </p>
+        <div class="hero_title-text">
+          <h3 class="hero_title">Nuevos Ingresos</h3>
+          <p class="hero_text">Descubrí el próximo Funko Pop de tu colección</p>
+        </div>
         <a class="hero_link" href="./views/shop/shop.html">SHOP</a>
       </article>
     </section>
@@ -82,7 +78,7 @@
             Disfruta de una saga que sigue agregando personajes a su colección.
           </p>
           <a class="collection_link" href="./views/shop/shop.html">
-            <button class="index_collection_button">VER COLECCIÓN</button>
+            VER COLECCIÓN
           </a>
         </article>
         <picture class="collection_cover">
@@ -102,7 +98,7 @@
             amigos.
           </p>
           <a class="collection_link" href="./views/shop/shop.html">
-            <button class="index_collection_button">VER COLECCIÓN</button>
+            VER COLECCIÓN
           </a>
         </article>
         <picture class="collection_cover">
@@ -118,7 +114,7 @@
             Revive los recuerdos de una saga llena de magia y encanto.
           </p>
           <a class="collection_link" href="./views/shop/shop.html">
-            <button class="index_collection_button">VER COLECCIÓN</button>
+            VER COLECCIÓN
           </a>
         </article>
         <picture class="collection_cover">
@@ -131,17 +127,23 @@
       <!--Fin Section Harry Potter-->
       <!--Inicio Section Ultimos Lanzamientos-->
       <section class="slider container">
-        <h2 class="slider_title">últimos lazamientos</h2>
+        <h2 class="slider_title">ÚLTIMOS LANZAMIENTOS</h2>
         <ul class="slider_items">
           <li class="slider_item">
             <article class="card-item">
               <a class="card-item_link" href="./views/shop/shop.html">
                 <picture class="card-item_cover">
+                  <span class="card-item_tag">NUEVO</span>
                   <img
+                    class="card-item_img-front"
                     src="./assets/img/star-wars/trooper-1.webp"
                     alt="Funko Stormtrooper"
                   />
-                  <span class="card-item_tag">NUEVO</>
+                  <img
+                    class="card-item_img-back"
+                    src="./assets/img/star-wars/trooper-box.webp"
+                    alt="Funko Stormtrooper Box"
+                  />
                 </picture>
                 <div class="card-item_content">
                   <p class="card-item_licence">STAR WARS</p>
@@ -156,11 +158,17 @@
             <article class="card_item">
               <a class="card-item_link" href="./views/shop/shop.html">
                 <picture class="card-item_cover">
+                  <span class="card-item_tag">NUEVO</span>
                   <img
+                    class="card-item_img-front"
                     src="./assets/img/pokemon/pidgeotto-1.webp"
                     alt="Funko Pidgeotto"
                   />
-                  <span class="card-item_tag">NUEVO</>
+                  <img
+                    class="card-item_img-back"
+                    src="./assets/img/pokemon/pidgeotto-box.webp"
+                    alt="Funko Pidgeotto Box"
+                  />
                 </picture>
                 <div class="card-item_content">
                   <p class="card-item_licence">POKEMON</p>
@@ -175,11 +183,17 @@
             <article class="index_newitem_container">
               <a href="./views/shop/shop.html">
                 <picture class="card-item_cover">
+                  <span class="card-item_tag">NUEVO</span>
                   <img
+                    class="card-item_img-front"
                     src="./assets/img/harry-potter/luna-1.webp"
                     alt="Funko Luna Lovegood Lion Mask"
                   />
-                  <span class="card-item_tag">NUEVO</>
+                  <img
+                    class="card-item_img-back"
+                    src="./assets/img/harry-potter/luna-box.webp"
+                    alt="Funko Luna Lovegood Lion Mask Box"
+                  />
                 </picture>
                 <div class="card-item_content">
                   <p class="card-item_licence">HARRY POTTER</p>
@@ -191,12 +205,6 @@
             </article>
           </li>
         </ul>
-        <button class="index_left_slider">
-          <iconify-icon icon="tabler:chevron-left"></iconify-icon>
-        </button>
-        <button class="index_right_slider">
-          <iconify-icon icon="ic:round-chevron-right"></iconify-icon>
-        </button>
       </section>
       <!--Fin Section Ultimos Lanzamientos-->
     </main>
