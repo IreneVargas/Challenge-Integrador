@@ -22,35 +22,15 @@
         </picture>
         <ul class="navbar_menu">
           <li class="navbar_item with-submenu">
-            <a class="navbar_link with-icon" href="../shop/shop.html"
-              >SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon
-            ></a>
-            <ul class="submenu">
-              <li class="submenu_item">
-                <a class="submenu_link" href="#">Figuras</a>
-              </li>
-              <li class="submenu_item">
-                <a class="submenu_link" href="#">Remeras</a>
-              </li>
-              <li class="submenu_item">
-                <a class="submenu_link" href="#">Llaveros</a>
-              </li>
-            </ul>
+            <a class="navbar_link with-icon" href="../../index.html"
+              >VER TIENDA</a
+            >
           </li>
           <li class="navbar_item">
-            <a class="navbar_link" href="../shop/contact.html">CONTACTO</a>
+            <a class="navbar_link" href="./admin.html">ADMIN</a>
           </li>
           <li class="navbar_item">
-            <a class="navbar_link" href="./login.html">LOGIN</a>
-          </li>
-          <li class="navbar_item">
-            <a class="navbar_cart" href="../shop/cart.html">
-              <img
-                class="cart-icon"
-                src="../../assets/img/icons/cart-icon.svg"
-                alt="Cart Icon"
-              />
-            </a>
+            <a class="navbar_link" href="#">SALIR</a>
           </li>
         </ul>
       </nav>
@@ -59,8 +39,8 @@
     <!-- Inicio Main -->
     <main>
       <article class="search container">
-        <label for="search_label">
-          <a class="search_link" href="#">
+        <label class="search_content" for="search_input">
+          <a class="search_link" href="#search_input">
             <img
               src="../../assets/img/icons/search_icon.svg"
               alt="Search Icon"
@@ -75,8 +55,8 @@
           />
         </label>
       </article>
-      <section class="list">
-        <article class="list_header container">
+      <section class="list container">
+        <article class="list_header">
           <h1 class="list_title">LISTADO DE PRODUCTOS</h1>
           <div class="list-add">
             <p class="list-add_text">AGREGAR</p>
@@ -86,8 +66,8 @@
           </div>
         </article>
         <!-- Inicio Lista de Productos -->
-        <article class="list_item container">
-          <div class="list-item_content bold">
+        <article class="list_item">
+          <div class="list-item_content">
             <div class="list-item_text">ID</div>
             <div class="list-item_text">Código</div>
             <div class="list-item_text">Nombre del Producto</div>
@@ -413,5 +393,6 @@
       <p class="footer_copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <!-- Fin Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   </body>
 </html>
