@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css");
 
 :root {
   /* Typography */
@@ -201,11 +203,6 @@ header .navbar_link:hover {
   font-size: var(--font-display);
 }
 
-.slider_items {
-  display: flex;
-  gap: var(--spacing-24);
-}
-
 .card-item_cover {
   display: flex;
   position: relative;
@@ -278,6 +275,20 @@ header .navbar_link:hover {
   }
 }
 
+.glide__arrows iconify-icon {
+  color: var(--dark-bg-solid);
+  font-size: var(--font-small);
+  font-weight: 900;
+}
+
+.glide__arrow--left {
+  left: 0;
+}
+
+.glide__arrow--right {
+  right: 0;
+}
+
 /* Footer*/
 
 .footer {
@@ -315,7 +326,6 @@ footer .navbar_link:hover {
 /* Media query para pantallas menores a 768px */
 
 @media (max-width: 768px) {
-  
   /* Cambios Header 768px */
   header {
     padding: var(--spacing-16);
@@ -362,6 +372,11 @@ footer .navbar_link:hover {
 
   .card-item_price {
     font-size: var(--font-xsmall);
+  }
+
+  .glide__arrow {
+    top: 45%;
+    padding: 0.45rem 0.6rem;
   }
 
   /* Cambios Footer 768px */
@@ -443,10 +458,6 @@ footer .navbar_link:hover {
     padding: var(--spacing-8);
   }
 
-  .slider_items {
-    gap: var(--spacing-8);
-  }
-
   .card-item_cover {
     width: 9.8rem;
   }
@@ -479,5 +490,14 @@ footer .navbar_link:hover {
 
   .navbar_iso {
     max-width: 11rem;
+  }
+
+  .glide__arrows iconify-icon {
+    font-size: var(--font-xsmall);
+  }
+
+  .glide__arrow {
+    top: 35%;
+    padding: 0;
   }
 }
