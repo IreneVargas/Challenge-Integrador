@@ -1,0 +1,135 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-36) 0;
+}
+
+.contact-head_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--alternative-font);
+}
+
+.contact-head_title {
+  font-size: var(--font-display);
+  font-weight: 700;
+  padding-bottom: var(--spacing-36);
+}
+
+.contact-head_text {
+  font-size: var(--font-xlarge);
+  font-weight: 500;
+  padding-bottom: var(--spacing-36);
+}
+
+.contact-data {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-large);
+  border: none;
+}
+
+.contact-data_content {
+  color: var(--dark-admin-font);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--spacing-36);
+}
+
+.contact-data_input,
+.contact-data_textarea {
+  padding: var(--spacing-8);
+  font-size: var(--font-small);
+}
+
+.contact-data_input {
+  border: none;
+  border-bottom: 0.2rem solid var(--primary-solid);
+  outline: none;
+}
+
+.contact-data_input::placeholder {
+  color: var(--light-grey);
+}
+
+.contact-data_textarea {
+  width: 38.5rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+.contact-data_textarea::placeholder {
+  color: var(--light-grey);
+}
+
+textarea:focus {
+  border: 0.2rem solid var(--primary-solid);
+  outline: none;
+}
+
+.contact_button {
+  border: none;
+  display: flex;
+}
+
+.btn-primary {
+  padding: var(--spacing-12) var(--spacing-24);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-bg-solid);
+}
+
+/* Media query para pantallas menores a 768px */
+
+@media (max-width: 768px) {
+    
+  .contact-head_content {
+    padding: var(--spacing-16);
+  }
+
+  .contact-head_title {
+    font-size: var(--font-xlarge);
+  }
+
+  .contact-head_text {
+    font-size: var(--font-large);
+  }
+
+  form {
+    padding: var(--spacing-16);
+  }
+
+  .contact-data {
+    font-size: var(--font-medium);
+  }
+}
+
+/* Media query para pantallas menores a 425px */
+
+@media (max-width: 425px) {
+  .contact {
+    padding: var(--spacing-8);
+  }
+
+  .contact-head_title {
+    font-size: var(--font-large);
+  }
+
+  .contact-head_text {
+    font-size: var(--font-medium);
+  }
+
+  .contact-data {
+    font-size: var(--font-xsmall);
+  }
+
+  .contact-data_textarea {
+    width: 36rem;
+  }
+}

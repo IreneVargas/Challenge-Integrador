@@ -1,0 +1,75 @@
+main {
+  margin: 3.6rem 0;
+}
+section {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title-wrapper {
+  color: var(--dark-solid);
+  font-family: var(--alternative-font);
+}
+.register-title {
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 3.6rem;
+}
+
+.register-description {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 3.6rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  max-width: 45%;
+  margin: 0 auto;
+}
+
+.input-wrapper label {
+  color: var(--dark-admin-font);
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.6rem;
+}
+
+.input-wrapper input::placeholder,
+.input-wrapper input {
+  color: var(--light-grey);
+}
+
+.input-wrapper input {
+  border: none;
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--primary-solid);
+}
+
+.submit-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submit-wrapper .btn-primary {
+  text-transform: unset;
+  padding: 1.2rem 2.5rem;
+}
+
+.submit-wrapper label {
+  font-size: 1.8rem;
+  color: var(--dark-solid);
+}
+
+.submit-wrapper label .terms-link {
+  font-size: 1.8rem;
+  color: var(--secondary-solid);
+}
