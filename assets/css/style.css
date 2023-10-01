@@ -359,7 +359,7 @@ footer .navbar_link:hover {
   }
 
   .card-item_cover {
-    width: 9.8rem;
+    width: 20rem;
   }
 
   .card-item_tag {
@@ -373,6 +373,15 @@ footer .navbar_link:hover {
   .card-item_price {
     font-size: var(--font-xsmall);
   }
+
+  .glide__arrow--left {
+    left: 1.6rem;
+  }
+  
+  .glide__arrow--right {
+    right: 1.6rem;
+  }
+  
 
   .glide__arrow {
     top: 45%;
@@ -459,7 +468,7 @@ footer .navbar_link:hover {
   }
 
   .card-item_cover {
-    width: 9.8rem;
+    width: 15rem;
   }
 
   .card-item_tag {
@@ -475,6 +484,24 @@ footer .navbar_link:hover {
   }
 
   /* Cambios Footer 425px */
+
+  .glide__arrows iconify-icon {
+    font-size: var(--font-xsmall);
+  }
+
+  .glide__arrow {
+    padding: 0.225rem 0.3rem;
+    padding: 0;
+  }
+
+  .glide__arrow--left {
+    left: .8rem;
+  }
+  
+  .glide__arrow--right {
+    right: .8rem;
+  }
+
   .footer .navbar {
     flex-direction: row;
   }
@@ -490,14 +517,5 @@ footer .navbar_link:hover {
 
   .navbar_iso {
     max-width: 11rem;
-  }
-
-  .glide__arrows iconify-icon {
-    font-size: var(--font-xsmall);
-  }
-
-  .glide__arrow {
-    top: 35%;
-    padding: 0;
   }
 }
