@@ -321,8 +321,12 @@ footer .navbar_link:hover {
   -moz-transition: 0.3s ease-in-out;
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
+.btn-primary:hover{
+  background-color: var(--primary-900);
+}
 /* Media query para pantallas menores a 768px */
 
 @media (max-width: 768px) {
