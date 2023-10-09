@@ -1,21 +1,117 @@
-.box {
-    display: flex;
-    align-items: center;
-    gap: 15%;
+/*card figure item*/
+
+.figure_container{
+  display: flex;
+  flex-direction: row;
+  margin: 60px 100px;
 }
 
-.one {
-    flex: 1;
+
+.figure_picture{
+  width: 44%;
+  margin-right: 90px;
+
 }
 
-.two {
-    flex: 1;
+
+.figure_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  margin: 10% 0px;
+
 }
 
-.three {
-    flex: 1;
+
+.figure_licence {
+  font-size: var(--font-xsmall);
+  font-weight: 500;
 }
 
-p {
-    text-align: left;
+
+.figure_title {
+  font-family: var(--alternative-font);
+  font-size: var(--font-jumbo);
+  margin-top: 10px;
 }
+
+.figure_text{
+  font-size: var(--font-large);
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+
+.figure_name {
+  font-size: var(--font-medium);
+  font-weight: 700;
+}
+
+.figure_price {
+  font-size: var(--font-jumbo);
+  margin-top: 15px;
+
+}
+
+
+.figure_counter_container{
+  display: flex;
+  justify-content: left;
+  height: 35px;
+  margin-top: 20px;
+
+}
+
+.figure_counter{
+  display: flex;
+  margin-right: 20px;
+  
+}
+
+.figure_input{
+  width: 100px;
+  height: 100%;
+  margin-right: 10px;
+  text-align: center;
+  border: 2px solid rgb(231, 231, 231);
+  font-size: var(--font-large);
+  color: #808080;
+}
+
+.container_buttons{
+  display: flex;
+  flex-direction: column; 
+}
+
+.figure_button{
+background-color:#585858;
+color: var(--light-bg-solid);
+height: 45%;
+width: 15px;
+border: none;
+margin-bottom: 4px;
+}
+
+.figure_button_add{
+  width: 32%;
+  background-color: var(--primary-solid);
+  color: var(--light-bg-solid);
+  border: none;
+  margin-left: 10px;
+  font-size: var(--font-medium);
+}
+
+.figure_link{
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: var(--secondary-solid);
+  font-weight: 700;
+}
+
+
+.figure_link a{
+  text-decoration:underline;
+  font-size: 1.5rem;
+}
+
