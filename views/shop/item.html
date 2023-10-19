@@ -65,18 +65,14 @@
           </p>
           <p class="figure_price">$ 1799,99</p>
 
-          <div class="figure_counter_container">
-
-            <div class="figure_counter">
-              <input class="figure_input" type="number" value="0" min="0" inputmode="numeric" readonly>
-              <div class="container_buttons">
-                <button class="figure_button">+</button>
-                <button class="figure_button">-</button>
-              </div>
-              </div>
-
-            <button class="figure_button_add">Agregar al Carrito</button>
-
+          <div class="item__cart">
+           
+            <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">  
+            <div class="container__buttons">
+              <button id="add" class="item__quantity" type="button">+</button>
+              <button id="subtract" class="item__quantity" type="button">-</button>
+            </div>
+            <button class="submit" type="submit">Agregar al Carrito</button>
           </div>
 
           <p class="figure_link"> <a href="#">Ver métodos de pago</a> - 3 CUOTAS SIN INTERES</p>
@@ -203,6 +199,7 @@
   <!--Fin Footer-->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="/assets/js/buttons.js"></script>
   <script src="/assets/js/slider.js"></script>
   <script src="/assets/js/core.js"></script>
 </body>

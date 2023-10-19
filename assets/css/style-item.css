@@ -13,7 +13,6 @@
 
 }
 
-
 .figure_content{
   display: flex;
   flex-direction: column;
@@ -54,24 +53,13 @@
 
 }
 
-
-.figure_counter_container{
-  display: flex;
-  justify-content: left;
-  height: 35px;
+.item__cart{
+  display: flex; 
   margin-top: 20px;
-
 }
 
-.figure_counter{
-  display: flex;
-  margin-right: 20px;
-  
-}
-
-.figure_input{
-  width: 100px;
-  height: 100%;
+.item__input{
+  width: 110px;
   margin-right: 10px;
   text-align: center;
   border: 2px solid rgb(231, 231, 231);
@@ -79,12 +67,12 @@
   color: #808080;
 }
 
-.container_buttons{
+.container__buttons{
   display: flex;
   flex-direction: column; 
 }
 
-.figure_button{
+.item__quantity{
 background-color:#585858;
 color: var(--light-bg-solid);
 height: 45%;
@@ -93,13 +81,14 @@ border: none;
 margin-bottom: 4px;
 }
 
-.figure_button_add{
+.submit{
+  margin-left: 25px;
   width: 32%;
   background-color: var(--primary-solid);
   color: var(--light-bg-solid);
   border: none;
-  margin-left: 10px;
   font-size: var(--font-medium);
+
 }
 
 .figure_link{
