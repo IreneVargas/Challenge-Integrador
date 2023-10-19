@@ -296,6 +296,9 @@ header .navbar_link:hover {
   padding: var(--spacing-68) var(--spacing-68) var(--spacing-36)
     var(--spacing-68);
   align-items: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer_copy {

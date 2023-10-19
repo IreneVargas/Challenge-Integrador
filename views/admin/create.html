@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create | Funkoshop</title>
     <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style-create.css" />
+    <link rel="stylesheet" href="../../assets/css/style-edit.css" rel="stylesheet" />
     <link rel="shorcut icon" href="../../assets/img/branding/isotype.svg" type="image/x-icon" />
   </head>
   <body>
@@ -57,51 +59,105 @@
     </header>
     <!--Fin Header-->
     <!--Creacion-->
-    <h2>CREAR NUEVO ITEM</h2>
-    <form action="">
-      <label for="">Categoría</label>
-      <select name="categorias" id="categorias">
-        <option>Seleccionar</option>
-        <option value="star-wars">STAR WARS</option>
-        <option value="pokemon">POKEMON</option>
-        <option value="harry-potter">HARRY POTTER</option>
-      </select>
-      <label for="">Licencia</label>
-      <select name="licencia" id="liciencia">
-        <option>Seleccionar</option>
-        <option value="star-wars">STAR WARS</option>
-        <option value="pokemon">POKEMON</option>
-        <option value="harry-potter">HARRY POTTER</option></select
-      ><br />
-      <label for="">Nombre del producto:</label>
-      <input type="text" value="Kakashi Hatake Shippuden Saga" /><br />
-      <textarea
-        name=""
-        id=""
-        cols="30"
-        rows="10"
-        placeholder="Descripción del producto"
-      ></textarea
-      ><br />
-      <label for="">SKU</label>
-      <input type="text" value="SSK111AB001" />
-      <label for="">Precio</label>
-      <input type="text" value="$ 0.000,00" />
-      <label for="">Stock</label>
-      <input type="text" value="0" /><br />
-      <label for="">Descuento</label>
-      <input type="text" value="0%" />
-      <label for="">Cuotas:</label>
-      <select name="" id="">
-        <option value="1cuota">1 Cuota sin interés</option>
-        <option value="2cuota">2 Cuotas sin interés</option>
-        <option value="3cuota">3 Cuotas sin interés</option></select
-      ><br />
-      <label for="">Imágenes:</label>
-      <input type="file" value="Elegir archivo" /><br />
-      <input type="submit" value="Agregar Producto" />
-      <input type="reset" value="Limpiar" />
+    <div class="container-create">
+    <div class="creacion">CREAR NUEVO ITEM</div>
+    <form class="form-container" action="">
+      <fieldset>
+        <div class="form-sub-container">
+          <label class="label-select" for="categoria">Categoría
+          </label>
+          <select class="categoria-select" name="categoria" id="categoria">
+            <option>Seleccionar</option>
+            <option value="star-wars">Figuras</option>
+            <option value="pokemon">Llaveros</option>
+            <option value="harry-potter">Remeras</option>
+          </select>
+
+          <label for="licencia">Licencia
+            <select class="licencia-select" name="licencia" id="licencia">
+              <option>Seleccionar</option>
+              <option value="star-wars">STAR WARS</option>
+              <option value="pokemon">POKEMON</option>
+              <option value="harry-potter">HARRY POTTER</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+
+        <div class="form-sub-container input-wrapper">
+          <label for="product_name">Nombre del producto:</label>
+          <input type="text" id="product_name" name="product_name" value="Kakashi el ninja" />
+        </div>
+
+        <div class="form-sub-container">
+          <textarea class="product_description" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+
+
+
+      <fieldset>
+        <div class="form-container-selects">
+          <div class="form-sub-container input-wrapper">
+            <label for="sku">SKU:</label>
+            <input class="" id="sku" name="sku" type="text" value="" />
+          </div>
+
+          <div class="form-sub-container input-wrapper">
+            <label for="price">Precio: </label>
+            <input class="" id="price" name="price" type="text" value="" />
+          </div>
+
+          <div class="form-sub-container input-wrapper">
+            <label for="stock">Stock: </label>
+            <input class="" id="stock" name="stock" type="text" value="" />
+          </div>
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <div class="form-container-selects">
+          <div class="form-sub-container input-wrapper">
+            <label for="descuento">Descuento: </label>
+            <input class="" id="descuento" name="descuento" type="text" value="" />
+          </div>
+          <div class="form-sub-container">
+            <label for="cuotas">Cuotas
+              <select class="cuota-select" name="cuotas" id="cuotas">
+                <option value="">1 Cuota sin interés</option>
+                <option value="">2 Cuotas sin interés</option>
+                <option value="">3 Cuotas sin interés</option>
+                <option value="">3 Cuotas sin interés</option>
+                <option value="">6 Cuotas sin interés</option>
+              </select>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="form-sub-container">
+        <label for="imagenes">Imágenes:</label>
+        <input class="" id="imagenes" name="imagenes" type="file" value="" />
+        </div>
+      </fieldset>
+
+      <!-- !ACA APARECEN LAS IMAGENES DE LOS ARCHIVOS -->
+
+      <div class="form-sub-container" id="gallery-container">
+           <div class="card-gallery"> T0D0</div>  
+      </div>
+
+
+      <div class="form-botonera">
+            <input class="btn-primary" type="submit" value="Agregar Producto" />
+            <input class="btn-primary" type="reset" value="Limpiar" />
+          </div>
     </form>
+  </div>
     <!--Fin Creacion-->
     <!--Inicio Footer-->
     <footer class="footer">
@@ -130,5 +186,6 @@
       <p class="footer_copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <!--Fin Footer-->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   </body>
 </html>
