@@ -1,0 +1,206 @@
+.creacion {
+    font-family: var(--alternative-font);
+   font-size: var(--spacing-24);
+    color: var(--dark-solid);
+    letter-spacing: 0.25rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.account {
+    font-family: var(--base-font);
+    color: var(--dark-solid);
+    width: 30vw;
+}
+
+.linea {
+    font-family: var(--base-font);
+    border-bottom: 2px solid #FF3333;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    color: #E0E0E0;
+}
+
+.lineados {
+    font-family: var(--base-font);
+    letter-spacing: 0.25rem;
+    text-align: right;
+    min-width: 150px;
+}
+
+.boton {
+    font-family: var(--base-font);
+    width: 103px;
+    height: 39px;
+    background: #FF3333; 
+    color: white;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.account_forgot {
+    font-family: var(--base-font);
+    color: #1D84B5;
+    text-align: center; 
+}
+
+.account_input, .account_sign{
+  margin: 7% 0% 7% 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-login{
+    font-size: var(--spacing-16);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70vw;
+    height: 50vh;
+}
+
+.container-create{
+    font-size: var(--spacing-16);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70vw;
+    margin-top: 2%;
+}
+
+input{
+    height: 30px;
+}
+
+input:hover{
+    color: var(--dark-solid);
+}
+
+input[type=checkbox],
+input[type=radio] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+main {
+    margin: 2%;
+  }
+  
+  .title-edit {
+    font-size: var(--font-xlarge);
+    font-weight: 700;
+  }
+  
+  .form-sub-container {
+    font-size: var(--font-medium);
+    padding: var(--spacing-12) var(--spacing-24) var(--spacing-12) var(--spacing-24);
+  }
+  
+  .categoria-select,
+  .licencia-select,
+  .cuota-select {
+    font-size: var(--font-medium);
+    margin-right: var(--spacing-24);
+    min-width: 150px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='40' viewBox='0 0 24 24' width='35' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-right: 3rem;
+    padding: 1rem;
+    padding-right: 3rem;
+  }
+  
+  .input-wrapper {
+    display: flex;
+  }
+  
+  .input-wrapper label {
+    color: var(--dark-admin-font);
+    font-size: var(--font-medium);
+    display: flex;
+    justify-content: space-between;
+    margin-right: var(--spacing-24);
+    align-self: center;
+  }
+  
+  .input-wrapper input::placeholder,
+  .input-wrapper input {
+    color: var(--light-grey);
+  }
+  
+  .input-wrapper input {
+    border: none;
+    font-size: var(--spacing-16);
+    border-bottom: 2px solid var(--primary-solid);
+    height: 40px;
+    align-self: center;
+  }
+  
+  .input-wrapper input:focus {
+    outline: none;
+    color: black;
+  }
+  
+  .product_description {
+    resize: none;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    padding: 1%;
+  }
+  
+  .form-container-selects{
+    display: flex;
+    justify-content: space-space-evenly;
+    margin-top: var(--spacing-12);
+  }
+  
+  .card-gallery{
+    background-color: gainsboro;
+    padding: var(--spacing-12) 0 var(--spacing-12) 0;
+    height: 100px;
+    width: 100px;
+    border-bottom: 2px solid var(--primary-solid);
+  }
+  
+  .btn-primary {
+    text-transform: unset;
+    padding: 1.2rem 2.5rem;
+  }
+  
+  fieldset {
+    border: 0;
+  }
+
+  .form-botonera{
+    display: flex;
+    height: 50px;
+    justify-content: start;
+  }
+
+  .btn-primary{
+    padding: 0px 20px 0px 20px;
+    margin: 0 30px 0px 30px;
+    height: 40px;
+  }
+
+@media (max-width: 768px) {
+    .account {
+        width: 80vw;
+    }
+    
+  
+  }
