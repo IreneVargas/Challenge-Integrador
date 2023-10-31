@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../../assets/css/style.css" rel="stylesheet" />
+    <link href="../../assets/css/style-create.css" rel="stylesheet" />
     <title>Login | Funkoshop</title>
   </head>
   <body>
@@ -57,45 +58,47 @@
     <!-- Fin Header -->
     <!-- Inicio Main -->
     <main>
-      <article class="container">
-        <h1>INGRESAR A MI CUENTA</h1>
+      <div class="container-login">
+        <div class="creacion">INGRESAR A MI CUENTA</div>
         <form class="account" method="post" action="">
           <div class="account_input">
-            <label class="account_email" for="account_email"
-              >Email:<input
-                class="email"
+            <label class="tamano account_email" for="account_email"
+              >Email:</label><input
+                class="linea email"
                 id="account_email"
                 name="email"
                 type="email"
                 placeholder="johndoe@correo.com"
-            /></label>
-            <label class="account_password" for="password"
-              >Contraseña:
+            />
+            </div>
+            <div class="account_input">
+             <label class="tamano account_password" for="password"
+              >Contraseña:</label>
               <input
-                class="password"
+                class="linea password"
                 id="password"
                 name="password"
                 type="password"
                 pattern="[a-z0-5]{8,}"
                 placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
                 required
-            /></label>
+            />
           </div>
           <div class="account_sign">
-            <button class="account_sign-button" type="submit">Ingresar</button>
+            <button class="account_sign-button boton" type="submit">Ingresar</button>
             <label class="account_sign-check" for="checkbox">
-              Recordarme
               <input
                 class="checkbox"
                 type="checkbox"
                 name="checkbox"
                 id="checkbox"
               />
+              Recordarme
             </label>
           </div>
           <a class="account_forgot" href="#">Olvidé mi contraseña</a>
         </form>
-      </article>
+      </div>
     </main>
     <!-- Fin Main -->
     <!-- Inicio Footer -->
@@ -125,5 +128,6 @@
       <p class="footer_copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <!--Fin Footer-->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   </body>
 </html>
